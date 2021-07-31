@@ -1,0 +1,4 @@
+[23-Apr-2020 14:25:50 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customer/www/martenk.sg-host.com/public_html/wp-content/themes/twentysixteen-child/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/martenk.sg-host.com/public_html/wp-content/themes/twentysixteen-child/index.php on line 17

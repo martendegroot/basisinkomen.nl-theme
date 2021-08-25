@@ -233,8 +233,10 @@ if( have_rows('content') ):
 					echo $field5;
 					echo $field6;	
 				echo "</a></div>";		
-			echo "</div></div>";		
-        endif;		
+			echo "</div></div>";
+		elseif( get_row_layout() == 'home_introductie' ):
+			get_template_part( 'template-parts/componenten/introductie' );
+    endif;		
     endwhile;
 endif;
 ?>	

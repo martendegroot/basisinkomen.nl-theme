@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Serif+Pro:wght@200;300;400&family=Work+Sans:ital,wght@0,200;0,300;0,600;1,300;1,600&display=swap");
+
+/* Elementen */
+body,
+button,
+input,
+select,
+textarea,
+blockquote {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  /* font-weight: 300; */
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+.site-title,
+.site-description,
+.menu-item a,
+.widget .widget-title,
+.mega-menu-link,
+.navigation .post-title {
+  font-family: "Source Serif Pro", serif !important;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

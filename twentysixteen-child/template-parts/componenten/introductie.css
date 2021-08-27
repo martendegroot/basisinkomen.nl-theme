@@ -25,6 +25,7 @@
   height: 200px;
   width: 33%;
   background: gray;
+  overflow: hidden;
   position: relative;
 }
 
@@ -41,6 +42,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  z-index: 100;
 }
 
 .c_introductie .movie_tiles__movie_item__overlay:hover img {
@@ -72,6 +74,16 @@
   background-size: cover;
   height: 100%;
   width: 100%;
+  transition: transform 1s, height 1s, width 1s;
+  transition-delay: 0.2s;
+}
+
+.c_introductie
+  .movie_tiles__movie_item:hover
+  .movie_tiles__movie_item__backdrop {
+  height: 110%;
+  width: 110%;
+  transform: translate(-3%, -5%);
 }
 
 @media screen and (max-width: 768px) {

@@ -4,8 +4,6 @@ $title = get_sub_field('block_title');
 $content = get_sub_field('block_content');
 $movie_tiles = get_sub_field('movie_blocks');
 
-var_dump($movie_tiles);
-
 ?>
 
 <div class="dranger c_introductie" id="introductie">
@@ -17,16 +15,19 @@ var_dump($movie_tiles);
     </div>
 
     <div class="movie_tiles">
-    <?php foreach($movie_tiles as $tile): ?>
-      <a href="www.google.com" target="_blank">
-        <div class="movie_tiles__movie_item">
-          <div class="movie_tiles__movie_item__overlay">
-            <div class="movie_tiles__movie_item__overlay__play-icon">
-              <img src="https://vectorified.com/images/play-button-icon-white-39.png" />
-            </div>
-            <div class="movie_tiles__movie_item__overlay__title"><?php echo $tile['$movie_title'] ?></div>
+    <?php 
+      foreach($movie_tiles as $tile):
+      $background_url = $tile['movie_background']['sizes']['medium']; 
+    ?>
+      <a class="movie_tiles__movie_item" href="<?php echo $tile['movie_url'] ?>" target="_blank" rel="noreferrer noopener">
+        <div class="movie_tiles__movie_item__overlay">
+          <div class="movie_tiles__movie_item__overlay__play-icon">
+            <img src="https://vectorified.com/images/play-button-icon-white-39.png" />
           </div>
-          <div class="movie_tiles__movie_item__backdrop"></div>
+          <div class="movie_tiles__movie_item__overlay__title"><?php echo $tile['movie_title'] ?></div>
+        </div>
+        <div class="movie_tiles__movie_item__backdrop" 
+          style='background-image: url("<?php echo $background_url ?>");'>
         </div>
       </a>
     <?php endforeach; ?>

@@ -1,1 +1,3 @@
-@import "./introductie.css";
+@import "./introductie/style.css";
+@import "./pluspunten/style.css";
+@import "./tegenwerpingen/style.css";

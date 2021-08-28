@@ -235,7 +235,11 @@ if( have_rows('content') ):
 				echo "</a></div>";		
 			echo "</div></div>";
 		elseif( get_row_layout() == 'home_introductie' ):
-			get_template_part( 'template-parts/componenten/introductie' );
+			get_template_part( 'template-parts/componenten/introductie/index' );
+		elseif( get_row_layout() == 'arguments_favor' ):
+			get_template_part( 'template-parts/componenten/introductie/index' );
+		elseif( get_row_layout() == 'arguments_against' ):
+			get_template_part( 'template-parts/componenten/introductie/index' );
     endif;		
     endwhile;
 endif;

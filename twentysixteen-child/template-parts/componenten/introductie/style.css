@@ -75,8 +75,7 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  transition: transform 1s, height 1s, width 1s;
-  transition-delay: 0.2s;
+  transition: transform 0.7s, height 0.7s, width 0.7s;
 }
 
 .c_introductie

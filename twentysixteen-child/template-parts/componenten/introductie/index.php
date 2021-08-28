@@ -22,7 +22,7 @@
           <div class="movie_tiles__movie_item__overlay__play-icon">
             <img src="https://vectorified.com/images/play-button-icon-white-39.png" />
           </div>
-          <div class="movie_tiles__movie_item__overlay__title"><?php echo $tile['movie_title'] ?></div>
+          <h5 class="movie_tiles__movie_item__overlay__title"><?php echo $tile['movie_title'] ?></h5>
         </div>
         <div class="movie_tiles__movie_item__backdrop" 
           style='background-image: url("<?php echo $background_url ?>");'>
@@ -43,4 +43,5 @@
         </a>
       </div>
     <?php endif; ?>
+  </div>
 </div>

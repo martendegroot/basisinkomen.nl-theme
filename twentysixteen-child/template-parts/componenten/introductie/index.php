@@ -1,12 +1,10 @@
 <?php 
-
-$title = get_sub_field('block_title');
-$content = get_sub_field('block_content');
-$movie_tiles = get_sub_field('movie_blocks');
-
+  $title = get_sub_field('block_title');
+  $content = get_sub_field('block_content');
+  $movie_tiles = get_sub_field('movie_blocks');
 ?>
 
-<div class="dranger c_introductie" id="introductie">
+<div class="dranger c_introductie c_component" id="introductie">
   <div class="entry-content rij kolom1 rkop">
 
     <div class="header_block">
@@ -33,11 +31,16 @@ $movie_tiles = get_sub_field('movie_blocks');
     <?php endforeach; ?>
     </div>
 
-    <div class="seperator">
-      <div class="seperator__line"></div>
-      <div class="seperator__link">
-        <div class="seperator__link__text">Meer over het basisinkomen</div>
-        <div class="seperator__link__arrow">&rarr;</div>
+    <?php 
+      $reference = get_sub_field('reference');
+      if($reference && $reference['text'] && $reference['url']) : 
+    ?>
+      <div class="seperator">
+        <div class="seperator__line"></div>
+        <a href="<?php echo $reference['url'] ?>" class="seperator__link">
+          <div class="seperator__link__text"><?php echo $reference['text'] ?></div>
+          <div class="seperator__link__arrow">&rarr;</div>
+        </a>
       </div>
-    </div>
+    <?php endif; ?>
 </div>

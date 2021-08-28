@@ -1,3 +1,68 @@
 @import "./introductie/style.css";
 @import "./pluspunten/style.css";
 @import "./tegenwerpingen/style.css";
+
+.c_component a {
+  box-shadow: none;
+}
+
+/**
+ *  Seperator
+ */
+.c_component .seperator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.c_component .seperator__line {
+  flex-grow: 1;
+  margin-top: 0.9em;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    #666 0,
+    #666 10px,
+    transparent 10px,
+    transparent 15px
+  );
+}
+
+.c_component .seperator__link {
+  display: flex;
+  margin-left: 100px;
+}
+
+.c_component .seperator__link:hover {
+  color: #0d0fd0 !important;
+}
+
+.c_component .seperator__link:hover .seperator__link__arrow {
+  transform: translate(20px, 0);
+}
+
+.c_component .seperator__link__arrow {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #666;
+  transition: transform 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .seperator__link__text {
+    border-bottom: 1px dashed #666;
+  }
+
+  .c_component .seperator__line {
+    display: none;
+  }
+
+  .c_component .seperator__link {
+    font-size: 80%;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

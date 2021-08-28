@@ -1,209 +1,40 @@
-.c_introductie {
-  margin: 40px 0;
-}
-
-/**
- *  Header
- */
-.c_introductie .header_block {
-  margin-bottom: 20px;
-  padding: 40px 40px 10px;
-  background: #dff1fe;
-}
-
-/**
- *  Movie items
- */
-.c_introductie .movie_tiles {
-  display: flex;
-  margin: 0 -20px 20px -20px;
-  width: calc(100% + 40px);
-}
-
-.c_introductie .movie_tiles__movie_item {
-  margin: 20px;
-  height: 200px;
-  width: 33%;
-  background: gray;
-  overflow: hidden;
-  position: relative;
-}
-
-.c_introductie .movie_tiles__movie_item__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  color: white;
-  background: rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.c_introductie .movie_tiles__movie_item__overlay:hover img {
-  height: 50%;
-}
-
-.c_introductie .movie_tiles__movie_item__overlay__play-icon {
-  height: 50%;
-}
-
-.c_introductie .movie_tiles__movie_item__overlay__title {
-  margin-bottom: -50%;
-  transition: margin 0.3s;
-}
-
-.c_introductie
-  .movie_tiles__movie_item__overlay:hover
-  .movie_tiles__movie_item__overlay__title {
-  margin: 0;
-}
-
-.c_introductie .movie_tiles__movie_item__overlay__play-icon img {
-  height: 100%;
-  transition: height 0.3s;
-}
-
-.c_introductie .movie_tiles__movie_item__backdrop {
-  background-image: url("https://www.vpro.nl/.imaging/stk/vpronl/header-image-extra-large/dam/vpronl/programmas/t/tegenlicht/2018/Ons-basisinkomen/ons-basisinkomen.jpg/jcr:content/ons-basisinkomen.jpg.jpeg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  transition: transform 1s, height 1s, width 1s;
-  transition-delay: 0.2s;
-}
-
-.c_introductie
-  .movie_tiles__movie_item:hover
-  .movie_tiles__movie_item__backdrop {
-  height: 110%;
-  width: 110%;
-  transform: translate(-3%, -5%);
-}
-
-@media screen and (max-width: 768px) {
-  .c_introductie .movie_tiles {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .c_introductie .movie_tiles__movie_item {
-    width: 100%;
-  }
-
-  .c_introductie .movie_tiles__movie_item__overlay__title {
-    margin: 0;
-    opacity: 0.85;
-    font-weight: 400;
-    text-shadow: 2px 2px 10px black;
-  }
-}
-
-/**
- *  Seperator
- */
-.c_introductie .seperator {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.c_introductie .seperator__line {
-  flex-grow: 1;
-  margin-top: 0.9em;
-  height: 1px;
-  background: repeating-linear-gradient(
-    to right,
-    #666 0,
-    #666 10px,
-    transparent 10px,
-    transparent 15px
-  );
-}
-
-.c_introductie .seperator__link {
-  display: flex;
-  margin-left: 100px;
-  cursor: pointer;
-}
-
-.c_introductie .seperator__link:hover .seperator__link__arrow {
-  transform: translate(20px, 0);
-}
-
-.c_introductie .seperator__link__arrow {
-  margin: 0 15px;
-  font-weight: bold;
-  color: #666;
-  transition: transform 0.2s;
-}
-
-@media screen and (max-width: 768px) {
-  .seperator__link__text {
-    border-bottom: 1px dashed #666;
-  }
-
-  .c_introductie .seperator__line {
-    display: none;
-  }
-
-  .c_introductie .seperator__link {
-    /* font-weight: bold; */
-    font-size: 80%;
-    margin-left: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-
 /**
  *  Arguments
  */
-.c_introductie .arguments {
-  margin: 70px 0 20px;
-}
-
-.c_introductie .arguments__header {
+.c_arguments_against .arguments__header {
   display: flex;
   margin-bottom: 40px;
 }
 
-.c_introductie .arguments__header__title {
+.c_arguments_against .arguments__header__title {
   margin-top: 25px !important;
   margin-left: 25px;
 }
 
-.c_introductie .arguments__item {
+.c_arguments_against .arguments__item {
   display: flex;
   margin: 10px;
 }
 
-.c_introductie .arguments__item__icon {
-  background: black;
+.c_arguments_against .arguments__item__icon {
   height: 50px;
   width: 50px;
   flex-shrink: 0;
   margin: 20px;
 }
 
-.c_introductie .arguments__item__text {
+.c_arguments_against .arguments__item__text {
   margin-left: 20px;
 }
 
-.c_introductie .arguments__item__text h4 {
+.c_arguments_against .arguments__item__text h4 {
   margin: 0 0 5px !important;
   font-size: 20px !important;
 }
 
 @media screen and (max-width: 768px) {
-  .c_introductie .arguments__item__icon,
-  .c_introductie .arguments__item {
+  .c_arguments_against .arguments__item__icon,
+  .c_arguments_against .arguments__item {
     margin: 0;
   }
 }

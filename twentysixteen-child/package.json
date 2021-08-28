@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "eslint-config-wordpress": "^2.0.0"
+  }
+}

@@ -235,13 +235,13 @@ if( have_rows('content') ):
 				echo "</a></div>";		
 			echo "</div></div>";
 		elseif( get_row_layout() == 'home_introductie' ):
-			get_template_part( 'template-parts/componenten/introductie/index' );
+			get_template_part( 'template-parts/componenten/introductie/introductie' );
 		elseif( get_row_layout() == 'arguments_favor' ):
-			get_template_part( 'template-parts/componenten/pluspunten/index' );
+			get_template_part( 'template-parts/componenten/pluspunten/pluspunten' );
 		elseif( get_row_layout() == 'arguments_against' ):
-			get_template_part( 'template-parts/componenten/tegenwerpingen/index' );
+			get_template_part( 'template-parts/componenten/tegenwerpingen/tegenwerpingen' );
 		elseif( get_row_layout() == 'recent_posts' ):
-			get_template_part( 'template-parts/componenten/recente_berichten/index' );
+			get_template_part( 'template-parts/componenten/recente_berichten/recente_berichten' );
     endif;		
     endwhile;
 endif;

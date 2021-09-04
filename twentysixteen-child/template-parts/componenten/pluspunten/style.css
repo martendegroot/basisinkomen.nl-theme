@@ -11,9 +11,22 @@
   margin-left: 25px;
 }
 
+.c_arguments_favor .arguments {
+  width: 66%;
+  float: left;
+}
+
+.c_arguments_favor .colored_spacer {
+  background-color: rgba(43, 194, 19, 0.1);
+  height: calc(100% - 40px);
+  width: calc(33% - 20px);
+  margin-left: 20px;
+  float: right;
+}
+
 .c_arguments_favor .arguments__item {
   display: flex;
-  margin: 10px;
+  margin: 10px 30px;
 }
 
 .c_arguments_favor .arguments__item__icon {
@@ -36,5 +49,13 @@
   .c_arguments_favor .arguments__item__icon,
   .c_arguments_favor .arguments__item {
     margin: 0;
+  }
+
+  .c_arguments_favor .colored_spacer {
+    display: none;
+  }
+
+  .c_arguments_favor .arguments {
+    width: 100%;
   }
 }

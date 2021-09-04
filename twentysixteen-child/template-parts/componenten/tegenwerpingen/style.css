@@ -1,6 +1,10 @@
 /**
  *  Arguments
  */
+.c_arguments_against .wrapper {
+  display: flex;
+}
+
 .c_arguments_against .arguments__header {
   display: flex;
   margin-bottom: 40px;
@@ -11,9 +15,22 @@
   margin-left: 25px;
 }
 
+.c_arguments_against .arguments {
+  width: 66%;
+  float: right;
+}
+
+.c_arguments_against .colored_spacer {
+  background-color: rgba(217, 10, 10, 0.1);
+  width: calc(33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
 .c_arguments_against .arguments__item {
   display: flex;
-  margin: 10px;
+  margin: 10px 30px;
 }
 
 .c_arguments_against .arguments__item__icon {
@@ -36,5 +53,13 @@
   .c_arguments_against .arguments__item__icon,
   .c_arguments_against .arguments__item {
     margin: 0;
+  }
+
+  .c_arguments_against .colored_spacer {
+    display: none;
+  }
+
+  .c_arguments_against .arguments {
+    width: 100%;
   }
 }

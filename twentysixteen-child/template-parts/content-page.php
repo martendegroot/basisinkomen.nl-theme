@@ -120,33 +120,6 @@ if( have_rows('content') ):
 					echo $field4;		
 				echo "</div>";			
 			echo "</div></div>";			
-        elseif( get_row_layout() == 'drie_kolommen' ): 
-            $field1 = get_sub_field('icon_1');
-            $field2 = get_sub_field('titel_1');	
-            $field3 = get_sub_field('icon_2');
-            $field4 = get_sub_field('titel_2');		
-            $field5 = get_sub_field('icon_3');
-            $field6 = get_sub_field('titel_3');	
-            $field7 = get_sub_field('kolom_1');	
-            $field8 = get_sub_field('kolom_2');	
-            $field9 = get_sub_field('kolom_3');			
-			echo "<div class='dranger'>"; if( get_sub_field('achtergrond') ): echo "<div class='achtergrond'><img src='".get_sub_field('achtergrond')."'></div>"; endif; echo "<div class='entry-content rij kolom1 rkop'>";
-				echo "<div class='kolom33'>"; ?> <?php
-					echo $field1;
-					echo "<h4>".$field2."</h4>";
-					echo $field7;
-				echo "</div>";	
-				echo "<div class='kolom33'>"; ?><?php
-					echo $field3;
-					echo "<h4>".$field4."</h4>";
-					echo $field8;
-				echo "</div>";	
-				echo "<div class='kolom33'>"; ?><?php
-					echo $field5;
-					echo "<h4>".$field6."</h4>";
-					echo $field9;
-				echo "</div>";		
-			echo "</div></div>";	
  		elseif( get_row_layout() == 'blogcategorie' ):
 			echo "<div class='dranger'>"; if( get_sub_field('achtergrond') ): echo "<div class='achtergrond'><img src='".get_sub_field('achtergrond')."'></div>"; endif; echo "<div class='entry-content rij kolom1 rkop'>";
 				$field1 = get_sub_field('blogcategorie');
@@ -234,6 +207,8 @@ if( have_rows('content') ):
 					echo $field6;	
 				echo "</a></div>";		
 			echo "</div></div>";
+		elseif( get_row_layout() == 'drie_kolommen' ): 
+			get_template_part( 'template-parts/componenten/drie_kolommen/drie_kolommen' );
 		elseif( get_row_layout() == 'home_introductie' ):
 			get_template_part( 'template-parts/componenten/introductie/introductie' );
 		elseif( get_row_layout() == 'arguments_favor' ):

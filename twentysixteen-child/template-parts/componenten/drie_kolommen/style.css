@@ -1,0 +1,31 @@
+/**
+ *  Drie Kolommen
+ */
+.c_drie_kolommen .background {
+  padding: 40px 0;
+}
+
+.c_drie_kolommen .columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.c_drie_kolommen .column {
+  width: calc(33% - 40px);
+  background: #ffffff;
+  padding: 40px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .c_drie_kolommen .columns {
+    flex-direction: column;
+  }
+
+  .c_drie_kolommen .column {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+    padding: 30px;
+  }
+}

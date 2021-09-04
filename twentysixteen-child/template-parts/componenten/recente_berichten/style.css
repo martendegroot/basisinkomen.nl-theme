@@ -1,0 +1,91 @@
+.c_recent_posts .header_block {
+  text-align: right;
+  width: 100%;
+}
+
+.c_recent_posts .header_block h2,
+.c_recent_posts .reference__arrow {
+  margin: 0 15px;
+}
+
+.c_recent_posts .reference {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.c_recent_posts .reference:hover .reference__arrow {
+  transform: translate(20px, 0);
+}
+
+.c_recent_posts .reference__arrow {
+  font-weight: bold;
+  color: #666;
+  transition: transform 0.2s;
+}
+
+.c_recent_posts .posts {
+  margin: 40px -5px;
+  display: flex;
+}
+
+.c_recent_posts .posts .item {
+  width: 25%;
+  margin: 5px;
+  padding: 10px;
+  transition: background-color 0.25s;
+}
+
+.c_recent_posts .posts .item:hover {
+  background: #eee;
+}
+
+.c_recent_posts .posts .item__header img {
+  height: 165px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.c_recent_posts .posts .item__meta {
+  height: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c_recent_posts .posts .item__link {
+  opacity: 0;
+  transition: opacity 0.35s;
+  font-size: 0.75em;
+  margin-top: 0.45em;
+  display: flex;
+  flex-grow: 1;
+}
+
+.c_recent_posts .posts .item:hover .item__link {
+  opacity: 1;
+}
+
+.c_recent_posts .posts .item__date {
+  background: #999;
+  padding: 5px 10px 5px;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+.c_recent_posts .posts .item__title {
+  font-size: 0.95em;
+  font-weight: normal;
+  margin: 1.25em 0 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .c_recent_posts .posts {
+    flex-direction: column;
+  }
+
+  .c_recent_posts .posts .item {
+    width: 100%;
+    margin: 0;
+  }
+}

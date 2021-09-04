@@ -147,9 +147,9 @@ if( have_rows('content') ):
 					echo $field9;
 				echo "</div>";		
 			echo "</div></div>";	
- 		elseif( get_row_layout() == 'blogcategorie' ): 
+ 		elseif( get_row_layout() == 'blogcategorie' ):
 			echo "<div class='dranger'>"; if( get_sub_field('achtergrond') ): echo "<div class='achtergrond'><img src='".get_sub_field('achtergrond')."'></div>"; endif; echo "<div class='entry-content rij kolom1 rkop'>";
-            	$field1 = get_sub_field('blogcategorie');
+				$field1 = get_sub_field('blogcategorie');
 				$field2 = get_sub_field('aantal');
 				$field3 = get_sub_field('elementen');
 				if ($field2=="") { $field2=0; }
@@ -210,16 +210,16 @@ if( have_rows('content') ):
 				endwhile; 								
 			endif;	
 			echo "</div></div>";				
-        elseif( get_row_layout() == 'drie_kolommen_links' ): 
-            $field1 = get_sub_field('icon_1');
-            $field2 = get_sub_field('kolom_1');	
-            $field3 = get_sub_field('icon_2');
-            $field4 = get_sub_field('kolom_2');		
-            $field5 = get_sub_field('icon_3');
-            $field6 = get_sub_field('kolom_3');	
-            $field7 = get_sub_field('link_1');	
-            $field8 = get_sub_field('link_2');	
-            $field9 = get_sub_field('link_3');			
+    elseif( get_row_layout() == 'drie_kolommen_links' ): 
+			$field1 = get_sub_field('icon_1');
+			$field2 = get_sub_field('kolom_1');	
+			$field3 = get_sub_field('icon_2');
+			$field4 = get_sub_field('kolom_2');		
+			$field5 = get_sub_field('icon_3');
+			$field6 = get_sub_field('kolom_3');	
+			$field7 = get_sub_field('link_1');	
+			$field8 = get_sub_field('link_2');	
+			$field9 = get_sub_field('link_3');			
 			echo "<div class='dranger'>"; if( get_sub_field('achtergrond') ): echo "<div class='achtergrond'><img src='".get_sub_field('achtergrond')."'></div>"; endif; echo "<div class='entry-content rij kolom1 rkop'>";
 				echo "<div class='kolom33'>"."<a href='".$field7."'>";
 					echo $field1;
@@ -240,6 +240,8 @@ if( have_rows('content') ):
 			get_template_part( 'template-parts/componenten/pluspunten/index' );
 		elseif( get_row_layout() == 'arguments_against' ):
 			get_template_part( 'template-parts/componenten/tegenwerpingen/index' );
+		elseif( get_row_layout() == 'recent_posts' ):
+			get_template_part( 'template-parts/componenten/recente_berichten/index' );
     endif;		
     endwhile;
 endif;

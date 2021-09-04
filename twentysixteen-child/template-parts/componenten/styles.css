@@ -1,8 +1,10 @@
 @import "./introductie/style.css";
 @import "./pluspunten/style.css";
 @import "./tegenwerpingen/style.css";
+@import "./recente_berichten/style.css";
 
 .c_component a {
+  color: #333;
   box-shadow: none;
 }
 
@@ -32,10 +34,6 @@
 .c_component .seperator__link {
   display: flex;
   margin-left: 100px;
-}
-
-.c_component .seperator__link:hover {
-  color: #0d0fd0 !important;
 }
 
 .c_component .seperator__link:hover .seperator__link__arrow {

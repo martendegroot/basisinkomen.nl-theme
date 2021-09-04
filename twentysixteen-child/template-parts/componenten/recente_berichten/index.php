@@ -5,7 +5,7 @@
 
   $args = array(
     'post_type'=>'post',
-    'posts_per_page' => 4,
+    'posts_per_page' => 3,
   );
   $pusts = new WP_Query($args);
 ?>
@@ -34,6 +34,9 @@
           <h3 class="item__title">
             <?php echo $post->post_title ?>
           </h3>
+          <p class="item__excerpt">
+            <?php echo rtrim(wp_strip_all_tags( get_the_excerpt($post->ID), true), "Lees verder");?>
+          </p>
         </a>
 
       <?php endforeach; ?>

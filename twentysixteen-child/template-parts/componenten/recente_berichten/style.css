@@ -29,18 +29,18 @@
 }
 
 .c_recent_posts .posts .item {
-  width: 25%;
-  margin: 5px;
+  width: 33%;
+  margin: 10px;
   padding: 10px;
   transition: background-color 0.25s;
 }
 
 .c_recent_posts .posts .item:hover {
-  background: #eee;
+  background: rgba(223, 241, 254, 0.4);
 }
 
 .c_recent_posts .posts .item__header img {
-  height: 165px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }
@@ -74,9 +74,13 @@
 }
 
 .c_recent_posts .posts .item__title {
-  font-size: 0.95em;
+  font-size: 1em;
   font-weight: normal;
   margin: 1.25em 0 1.5em;
+}
+
+.c_recent_posts .posts .item__excerpt {
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,5 +91,13 @@
   .c_recent_posts .posts .item {
     width: 100%;
     margin: 0;
+  }
+
+  .c_recent_posts .posts .item__title {
+    font-size: 1.2em;
+  }
+
+  .c_recent_posts .posts .item__excerpt {
+    font-size: 1em;
   }
 }

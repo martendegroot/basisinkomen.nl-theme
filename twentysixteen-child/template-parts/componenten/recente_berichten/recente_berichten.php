@@ -11,7 +11,7 @@
 
     <div class="header_block">
       <h2>Recente berichten</h2>
-      <a href="https://google.com" class="reference">bekijk archief<div class="reference__arrow">&rarr;</div></a>
+      <a href="https://google.com" class="reference">bekijk alle berichten<div class="reference__arrow">&rarr;</div></a>
     </div>
 
     <div class="posts">

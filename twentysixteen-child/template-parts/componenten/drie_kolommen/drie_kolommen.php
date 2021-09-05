@@ -12,7 +12,7 @@ $columns = array_map( function($index) {
 $background = get_sub_field('achtergrond');
 ?>
 
-<div class="dranger c_drie_kolommen c_component" id="drie_kolommen">
+<div class="dranger c_drie_kolommen" id="drie_kolommen">
   <div 
     class="background"
     <?php if( $background ): ?>
